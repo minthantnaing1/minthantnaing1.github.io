@@ -6,10 +6,10 @@ The XO Car Showroom web application is designed to showcase a variety of cars, a
 
 ## Features
 
-Homepage: Displays a list of cars with filtering options. Users can highlight their favorite cars and see a visual representation of the highlights.
-Dashboard: Provides a detailed overview with a table of cars by brand and model, a pie chart of cars by brand, and a stacked bar chart of models for each brand.
-Highlighted Cars Page: Shows only the cars that the user has highlighted. Users can remove highlights from this page.
-Responsive Design: The app is designed to be responsive, with a clean layout for viewing cars and interacting with the highlight feature.
+- Homepage: Displays a list of cars with filtering options. Users can highlight their favorite cars and see a visual representation of the highlights.
+- Dashboard: Provides a detailed overview with a table of cars by brand and model, a pie chart of cars by brand, and a stacked bar chart of models for each brand.
+- Highlighted Cars Page: Shows only the cars that the user has highlighted. Users can remove highlights from this page.
+- Responsive Design: The app is designed to be responsive, with a clean layout for viewing cars and interacting with the highlight feature.
 
 ## Team Members
 
