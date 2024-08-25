@@ -13,6 +13,6 @@ Responsive Design: The app is designed to be responsive, with a clean layout for
 
 ## Team Members
 
-Min Thant Naing
-Min Thant Win
-Thu Ya Myint Myat Thein
+- Min Thant Naing - 6530233
+- Min Thant Win - 6530226
+- Thu Ya Myint Myat Thein - 6530227
