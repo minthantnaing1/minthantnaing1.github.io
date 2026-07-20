@@ -2,13 +2,476 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/assets/index-_zNbkxTQ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-Cw8lu_xI.css">
+
+    <meta
+      name="description"
+      content="Portfolio of Min Thant Naing, an Information Technology graduate and web developer building modern web applications."
+    />
+
+    <title>Min Thant Naing | Web Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div id="root"></div>
+    <div class="page-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="container nav-container">
+        <a class="logo" href="#home" aria-label="Go to homepage">
+          <span class="logo-symbol">&lt;/&gt;</span>
+          <span>MTN.dev</span>
+        </a>
+
+        <button
+          class="menu-button"
+          id="menuButton"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="navigation" id="navigation">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#stack">Stack</a>
+          <a href="#projects">Projects</a>
+          <a class="nav-contact" href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span class="status-dot"></span>
+              Available for opportunities
+            </p>
+
+            <h1>
+              I build thoughtful
+              <span class="gradient-text">web experiences.</span>
+            </h1>
+
+            <p class="hero-description">
+              I'm <strong>Min Thant Naing</strong>, an Information Technology
+              graduate and web developer focused on creating clean, practical,
+              and user-friendly digital products.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button primary-button" href="#projects">
+                View my work
+                <span aria-hidden="true">↗</span>
+              </a>
+
+              <a class="button secondary-button" href="#contact">
+                Let's talk
+              </a>
+            </div>
+
+            <div class="quick-info">
+              <div>
+                <span class="quick-label">Based in</span>
+                <span>Bangkok, Thailand</span>
+              </div>
+
+              <div>
+                <span class="quick-label">Focus</span>
+                <span>Full-stack web development</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="profile-terminal">
+              <div class="terminal-topbar">
+                <div class="terminal-dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p>developer-profile.ts</p>
+              </div>
+
+              <div class="terminal-body">
+                <div class="profile-image-placeholder">
+                  <img src="image/bg.jpg" alt="Min Thant Naing" />
+                </div>
+
+                <div class="code-profile">
+                  <p><span class="code-keyword">const</span> developer = {</p>
+                  <p>
+                    &nbsp;&nbsp;<span class="code-property">name</span>:
+                    <span class="code-string">"Min Thant Naing"</span>,
+                  </p>
+                  <p>
+                    &nbsp;&nbsp;<span class="code-property">nickname</span>:
+                    <span class="code-string">"Abel"</span>,
+                  </p>
+                  <p>
+                    &nbsp;&nbsp;<span class="code-property">role</span>:
+                    <span class="code-string">"Web Developer"</span>,
+                  </p>
+                  <p>
+                    &nbsp;&nbsp;<span class="code-property">interests</span>: [
+                  </p>
+                  <p>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="code-string"
+                      >"Web"</span
+                    >, <span class="code-string">"Tech"</span>,
+                    <span class="code-string">"Gadgets"</span>
+                  </p>
+                  <p>&nbsp;&nbsp;],</p>
+                  <p>
+                    &nbsp;&nbsp;<span class="code-property">building</span>:
+                    <span class="code-string">"useful products"</span>
+                  </p>
+                  <p>};</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="gadget gadget-phone" aria-hidden="true">
+              <div class="phone-speaker"></div>
+              <div class="phone-screen">
+                <span>01</span>
+                <small>mobile</small>
+              </div>
+            </div>
+
+            <div class="gadget gadget-speaker" aria-hidden="true">
+              <div class="speaker-ring"></div>
+              <div class="speaker-dot"></div>
+            </div>
+
+            <div class="gadget-label gadget-label-one" aria-hidden="true">
+              responsive_ui
+            </div>
+
+            <div class="gadget-label gadget-label-two" aria-hidden="true">
+              clean_code
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-number">01 / About</p>
+            <h2>Developer mindset, practical approach.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p class="large-copy">
+                I enjoy turning ideas into modern web applications that feel
+                simple, clear, and reliable.
+              </p>
+
+              <p>
+                My background in Information Technology has given me experience
+                with frontend development, backend APIs, databases,
+                authentication, payments, and admin systems.
+              </p>
+
+              <p>
+                I'm especially interested in products that combine useful
+                technology with thoughtful design. Outside development, I enjoy
+                exploring laptops, phones, speakers, audio gear, and other
+                consumer technology.
+              </p>
+            </div>
+
+            <div class="about-cards reveal">
+              <article class="info-card">
+                <span class="card-icon">⌘</span>
+                <p class="card-label">What I am</p>
+                <h3>IT Graduate & Developer</h3>
+                <p>
+                  A recent Information Technology graduate building practical
+                  full-stack web applications.
+                </p>
+              </article>
+
+              <article class="info-card">
+                <span class="card-icon">◫</span>
+                <p class="card-label">What I do</p>
+                <h3>Build Digital Products</h3>
+                <p>
+                  I create responsive interfaces, backend features, databases,
+                  and complete web experiences.
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section section-muted" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-number">02 / Services</p>
+            <h2>How I can help.</h2>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card reveal">
+              <span class="service-number">01</span>
+              <div>
+                <h3>Website Development</h3>
+                <p>
+                  Responsive websites and landing pages with clean structure,
+                  accessible layouts, and strong visual clarity.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-number">02</span>
+              <div>
+                <h3>Full-Stack Applications</h3>
+                <p>
+                  Web applications with authentication, databases, dashboards,
+                  APIs, user roles, and business logic.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-number">03</span>
+              <div>
+                <h3>UI Implementation</h3>
+                <p>
+                  Turning designs or ideas into responsive interfaces using
+                  React, Next.js, Tailwind CSS, HTML, and CSS.
+                </p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <span class="service-number">04</span>
+              <div>
+                <h3>Website Improvement</h3>
+                <p>
+                  Improving existing websites through redesign, responsive
+                  fixes, feature updates, and better user experience.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- TECH STACK -->
+      <section class="section" id="stack">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-number">03 / Tech Stack</p>
+            <h2>Tools I work with.</h2>
+          </div>
+
+          <div class="stack-layout">
+            <div class="stack-main reveal">
+              <article class="stack-group">
+                <p class="stack-category">Frontend</p>
+                <div class="stack-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>React</span>
+                  <span>Next.js</span>
+                  <span>Tailwind CSS</span>
+                </div>
+              </article>
+
+              <article class="stack-group">
+                <p class="stack-category">Backend & Data</p>
+                <div class="stack-tags">
+                  <span>Next.js API Routes</span>
+                  <span>REST APIs</span>
+                  <span>MongoDB</span>
+                  <span>SQL</span>
+                  <span>Oracle</span>
+                </div>
+              </article>
+
+              <article class="stack-group">
+                <p class="stack-category">Cloud, Tools & Platforms</p>
+                <div class="stack-tags">
+                  <span>AWS</span>
+                  <span>Git</span>
+                  <span>GitHub</span>
+                  <span>Vercel</span>
+                  <span>Stripe</span>
+                  <span>Cloudinary</span>
+                  <span>Figma</span>
+                </div>
+              </article>
+            </div>
+
+            <div
+              class="desk-illustration reveal"
+              aria-label="Minimal laptop and speaker illustration"
+            >
+              <div class="laptop">
+                <div class="laptop-screen">
+                  <div class="mini-code">
+                    <span>&lt;main&gt;</span>
+                    <span>&nbsp;&nbsp;build()</span>
+                    <span>&lt;/main&gt;</span>
+                  </div>
+                </div>
+                <div class="laptop-base"></div>
+              </div>
+
+              <div class="desk-speaker">
+                <div></div>
+                <span></span>
+              </div>
+
+              <p>web / systems / gadgets</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECT -->
+      <section class="section section-muted" id="projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-number">04 / Selected Project</p>
+            <h2>Work I'm proud of.</h2>
+          </div>
+
+          <article class="project-card reveal">
+            <div class="project-image">
+              <img
+                src="image/trustloop-home.png"
+                alt="TrustLoop marketplace homepage"
+              />
+            </div>
+
+            <div class="project-content">
+              <div class="project-meta">
+                <span>Featured project</span>
+                <span>2026</span>
+              </div>
+
+              <h3>TrustLoop</h3>
+
+              <p>
+                A trusted second-hand marketplace created for Assumption
+                University students to buy, sell, donate, and auction items
+                within their university community.
+              </p>
+
+              <div class="project-features">
+                <span>Authentication</span>
+                <span>Stripe Payments</span>
+                <span>Role-Based Access</span>
+                <span>Admin Dashboard</span>
+                <span>Search & Filtering</span>
+                <span>Responsive UI</span>
+              </div>
+
+              <div class="project-tech">
+                <span>Next.js</span>
+                <span>React</span>
+                <span>MongoDB</span>
+                <span>JavaScript</span>
+                <span>Tailwind CSS</span>
+              </div>
+
+              <div class="project-links">
+                <a
+                  class="text-link"
+                  href="https://trustloopau.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live website ↗
+                </a>
+
+                <a
+                  class="text-link"
+                  href="https://github.com/minthantnaing1/trustloop"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub repository ↗
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="section-number">05 / Contact</p>
+            <h2>Have an idea? Let's build it.</h2>
+          </div>
+
+          <div class="contact-content reveal">
+            <p>
+              I'm open to web development opportunities, internships,
+              collaborations, and freelance projects.
+            </p>
+
+            <a class="contact-email" href="mailto:your-email@example.com">
+              minthantnaing1976@gmail.com
+            </a>
+
+            <div class="social-links">
+              <a
+                href="https://github.com/minthantnaing1"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+
+              <a
+                href="https://linkedin.com/in/min-thant-naing-393a3b395"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                LinkedIn ↗
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Designed & built by Min Thant Naing.</p>
+        <p><span id="currentYear"></span> / Bangkok</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
