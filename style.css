@@ -160,14 +160,18 @@ img {
 .logo {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+
   font-family: var(--font-mono);
   font-size: 0.94rem;
   font-weight: 600;
 }
 
-.logo-symbol {
-  color: var(--accent);
+.logo-image {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  display: block;
 }
 
 .navigation {
